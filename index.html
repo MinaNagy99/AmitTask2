@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(5, 70, 70); color: white">
+    <form action="">
+      <fieldset>
+        <legend>Registration</legend>
+        <br /><br />
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="Type your first name" id="fname" />
+        <br />
+        <br />
+
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Type your last name" id="lname" />
+        <br />
+        <br />
+
+        <label for="age">Age</label>
+        <input type="number" min="18" max="60" id="age" />
+        <br />
+        <br />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" />
+        <br />
+        <br />
+
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" />
+        <br />
+        <br />
+
+        <label for="gender">Gender</label><br />
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+
+        <br />
+        <br />
+
+        <label for="skills">Your Skills</label><br />
+        <label for="html">HTML</label>
+        <input id="html" value="html" name="skills" type="checkbox" />
+        <label for="CSS">CSS</label>
+        <input id="CSS" value="CSS" name="skills" type="checkbox" />
+        <label for="JavaScript">JavaScript</label>
+        <input
+          id="JavaScript"
+          value="JavaScript"
+          name="skills"
+          type="checkbox"
+        />
+        <label for="React">React JS</label>
+        <input id="React" value="React" name="skills" type="checkbox" />
+        <br />
+        <br />
+
+        <label for="info">Additional Information</label><br />
+        <textarea
+          id="info"
+          placeholder="Provide any additional information here..."
+          rows="4"
+          cols="50"
+        ></textarea>
+        <br />
+        <br />
+
+        <label for="file">Upload Resume</label>
+        <input type="file" id="file" />
+        <br />
+        <br />
+        <button style="background-color: rgb(0, 41, 68); color: white" type="submit">
+          Submit
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
