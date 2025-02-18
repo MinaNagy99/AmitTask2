@@ -11,27 +11,55 @@
         <legend>Registration</legend>
         <br /><br />
         <label for="fname">First Name</label>
-        <input type="text" placeholder="Type your first name" id="fname" />
+        <input
+          type="text"
+          placeholder="Type your first name"
+          name="fName"
+          id="fname"
+        />
         <br />
         <br />
 
         <label for="lname">Last Name</label>
-        <input type="text" placeholder="Type your last name" id="lname" />
+        <input
+          type="text"
+          placeholder="Type your last name"
+          id="lname"
+          name="lName"
+        />
         <br />
         <br />
 
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Type your email"
+        />
+        <br /><br />
+        <label for="pass">password</label>
+        <input
+          type="password"
+          min="8"
+          max="60"
+          id="pass"
+          name="password"
+          placeholder="Type your password"
+        />
+        <br /><br />
         <label for="age">Age</label>
-        <input type="number" min="18" max="60" id="age" />
+        <input type="number" name="age" min="18" max="60" id="age" />
         <br />
         <br />
 
         <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" />
+        <input type="date" id="dob" name="brithDate" />
         <br />
         <br />
 
         <label for="color">Favorite Color</label>
-        <input type="color" id="color" />
+        <input type="color" id="color" name="color" />
         <br />
         <br />
 
@@ -46,11 +74,11 @@
 
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="egypt">Egypt</option>
-          <option value="usa">United States</option>
-          <option value="canada">Canada</option>
-          <option value="uk">United Kingdom</option>
-          <option value="australia">Australia</option>
+          <option name="country" value="egypt">Egypt</option>
+          <option name="country" value="usa">United States</option>
+          <option name="country" value="canada">Canada</option>
+          <option name="country" value="uk">United Kingdom</option>
+          <option name="country" value="australia">Australia</option>
         </select>
         <br />
         <br />
@@ -75,6 +103,7 @@
         <label for="info">Additional Information</label><br />
         <textarea
           id="info"
+          name="additionalInformation"
           placeholder="Provide any additional information here..."
           rows="4"
           cols="50"
@@ -83,7 +112,7 @@
         <br />
 
         <label for="file">Upload Resume</label>
-        <input type="file" id="file" />
+        <input type="file" id="file" name="cv" />
         <br /><br />
         <button
           style="background-color: rgb(74, 102, 121); color: white"
